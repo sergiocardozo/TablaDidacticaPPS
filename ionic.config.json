@@ -1,0 +1,7 @@
+{
+  "name": "alarmaRoboPPS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
