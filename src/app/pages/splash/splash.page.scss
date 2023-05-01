@@ -1,0 +1,116 @@
+ion-content {
+    /*     --background: rgb(191, 182, 182);
+    --background: linear-gradient(325deg,
+            rgba(191, 182, 182, 1) 14%,
+            rgba(0, 0, 0, 0.8468429608171394) 39%,
+            rgba(0, 0, 0, 1) 68%,
+            rgba(0, 0, 0, 1) 68%,
+            rgba(0, 0, 0, 1) 73%); */
+    --background: rgb(106, 4, 15);
+    --background: linear-gradient(126deg, rgba(106, 4, 15, 1) 8%, rgba(244, 140, 6, 1) 84%);
+
+    p {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px rgb(0, 0, 0);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    :nth-child(1),
+    :nth-child(2),
+    :nth-child(3) {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    img {
+        width: 17rem;
+    }
+}
+
+// animacion letras
+.letras {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tracking-in-expand-fwd {
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.rotate-in-center {
+    -webkit-animation: rotate-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: rotate-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+
+@-webkit-keyframes rotate-in-center {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-in-center {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
