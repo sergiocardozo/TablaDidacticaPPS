@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { AuthService } from '../service/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  authSrv = inject(AuthService);
+  constructor(private router: Router) {
+  }
+
+  logout() {
+    this.authSrv.signOut().then((resp) => {
+      this.router.navigate(['/login']);      
+    })
+  }
 
 }

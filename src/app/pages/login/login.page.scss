@@ -1,0 +1,83 @@
+ion-content {
+    --background: rgb(106, 4, 15);
+    --background: linear-gradient(126deg, rgba(106, 4, 15, 1) 8%, rgba(244, 140, 6, 1) 84%);
+}
+ion-img {
+    
+    width: 9rem;
+}
+ion-header {
+    position: absolute;
+}
+
+ion-toolbar {
+    --ion-background-color: transparent;
+    opacity: 0;
+}
+
+ion-card {
+    --ion-background-color: transparent;
+    box-shadow: none;
+}
+ion-card-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+ion-card-subtitle{
+    padding-top: 10px;
+    font-size: 11px;
+    color: #898585;
+    text-align: center;
+    font-weight: 300;
+}
+
+ion-item {
+    ion-icon, ion-input {
+        color: white;
+    }
+}
+.signin-btns {
+    margin-top: 15px;
+    text-align: center;
+    color: #FFBA08;
+    .ingresoRapido {
+        color: #03071E;
+        --ion-color-primary: #370617;
+      
+    }
+}
+.loginbtn {
+    --ion-color-primary: #370617;
+}
+hr {
+    height: 3px;
+    background-color: #FFBA08;
+  }
+  
+
+.wrapform {
+    margin-top: 20px;
+}
+.errors {
+    font-size: small;
+	color: #FFBA08;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.password-forgot {
+    text-align: right;
+    ion-button {
+        font-size: 12px;
+        text-transform: initial;
+        color: white;
+
+        strong {
+            color: #370617;
+        }
+    }
+}

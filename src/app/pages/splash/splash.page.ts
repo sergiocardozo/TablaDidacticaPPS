@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Platform } from '@ionic/angular';
+
+import { Plugins } from '@capacitor/core';
 import { SplashScreen } from '@capacitor/splash-screen';
+
 @Component({
   selector: 'app-splash',
   templateUrl: './splash.page.html',
@@ -13,7 +16,7 @@ export class SplashPage implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      this.router.navigateByUrl('home');
+      this.router.navigateByUrl('login');
     }, 3000);
   }
 
