@@ -4,15 +4,90 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="d-flex flex-column align-items-center">
+<ion-content class="background">
+
+  <ion-card class="ion-margin mt-5 background_card">
+
+    <ion-card-header>
+      <ion-card-title>INGRESA COMO:</ion-card-title>
+
+    </ion-card-header>
+
+    <ion-card-content class="ion-no-padding ion-no-margin">
+
+      <div class="d-flex">
+
+        <ion-button (click)="testLogin()" fill="clear" size="large" class="ingresoRapido">
+          <div class="d-flex flex-column justify-content-center">
+            <p>Admin</p>
+            <img src="../../../assets/perfil.png" alt="">
+          </div>
+        </ion-button>
+
+        <ion-button (click)="testLogin1()" fill="clear" size="large" class="ingresoRapido">
+          <div class="d-flex flex-column justify-content-center">
+            <p>Usuario</p>
+            <img src="../../../assets/desconocido.png" alt="">
+          </div>
+        </ion-button>
+
+        <ion-button (click)="testLogin2()" fill="clear" size="large" class="ingresoRapido">
+          <div class="d-flex flex-column justify-content-center">
+            <p>Invitado</p>
+            <img src="../../../assets/hombre.png" alt="">
+          </div>
+        </ion-button>
+      </div>
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card class="ion-margin background_card mt-3">
+    <ion-card-header>
+      <ion-card-title>inicia sesión</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <form [formGroup]="formData">
+
+        <ion-input formControlName="email" type="email" label="Email" label-placement="floating" fill="solid"
+          class="custom "></ion-input>
+
+        <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+          <p *ngIf="email.errors['required']">Ingresar email</p>
+          <p *ngIf="email.errors['email']">Ingresar email</p>
+        </div>
+
+        <ion-input formControlName="password" type="password" label="Contraseña" label-placement="floating" fill="solid"
+          class="custom mt-2"></ion-input>
+
+        <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+          <span *ngIf="password.errors['required']">Ingresar contraseña</span>
+          <span *ngIf="password.errors['minlength']">La contraseña debe ser de 6 digitos</span>
+        </div>
+
+      </form>
+      <ion-button (click)="onLogin()" expand="block" shape="round" size="default" class="btnLogin mt-3">
+        <ion-icon slot="start" name="log-in"></ion-icon>
+        Ingresar
+      </ion-button>
+      <div class="errors text-center">
+        <p *ngIf="error === true">{{message}}</p>
+      </div>
+
+
+    </ion-card-content>
+
+  </ion-card>
+  <!-- <div class="d-flex flex-column align-items-center">
 
     <ion-card class="ion-no-margin">
-
       <div class="d-flex justify-content-center mt-5 text-center">
-        <ion-img src="../../../assets/icon.png"></ion-img>
+        <ion-img src="../../../assets/background.png"></ion-img>
 
       </div>
+
 
       <ion-card-header>
 
@@ -58,11 +133,7 @@
               </div>
             </div>
           </form>
-          <!-- <div class="password-forgot">
-          <ion-button fill="clear" class="ion-no-padding" routerLink="/register">No tenes
-            cuenta?<strong>Registrate</strong></ion-button>
-          </div> -->
-        </div>
+         </div>
         <div class="signin-btns">
           <ion-button (click)="onLogin()" fill="solid" shape="round" class="loginbtn">Login</ion-button>
         </div>
@@ -86,5 +157,5 @@
       <ion-button fill="outline" shape="round" (click)="testLogin1()" class="ingresoRapido">Invitado</ion-button>
       <ion-button fill="outline" shape="round" (click)="testLogin2()" class="ingresoRapido">Usuario</ion-button>
     </div>
-  </div>
+  </div> -->
 </ion-content>
