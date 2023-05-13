@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.tabladinamica.pps',
-  appName: 'tablaDinamica',
+  appId: 'com.tabladidactica.pps',
+  appName: 'Tabla Didactica',
   webDir: 'www',
   bundledWebRuntime: false,
   "plugins": {

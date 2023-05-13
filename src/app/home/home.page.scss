@@ -1,27 +1,36 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-content {
+  --background: linear-gradient(126deg, rgba(217, 237, 146, 0.773546918767507) 8%, rgba(82, 182, 154, 0.7483368347338936) 71%), url('../../assets/background.png') 0 0/100% 100% no-repeat;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-fab-button.btn_traductor {
+  --background: transparent;
+  --color: dark;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-fab-button.btnSeleccion {
+  --background: transparent;
+  --color: dark;
+}
+ion-grid {
+  height: 100%;
+  width: 100%;
+}
+ion-row {
+  height: 100%;
+  flex-grow: 1;
+}
+ion-button {
+  border: 5px inset #184E77;
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+  box-shadow: 5px 5px 5px #000;
+  --background: #76C893 0.7;  
 }
 
-#container a {
-  text-decoration: none;
+@media (min-height: 600px) {
+  ion-button {
+    width: 10rem;
+    height: 10rem;
+  }
 }

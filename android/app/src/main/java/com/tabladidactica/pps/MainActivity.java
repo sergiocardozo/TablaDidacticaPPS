@@ -1,4 +1,4 @@
-package com.tabladinamica.pps;
+package com.tabladidactica.pps;
 
 import com.getcapacitor.BridgeActivity;
 
