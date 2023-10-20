@@ -57,6 +57,7 @@
 <img align="left" height="400" src="https://github.com/sergiocardozo/TablaDidacticaPPS/assets/52476421/6844c88d-badf-4283-b930-8b2bcf9c4a20"  />
 
 ###
+<br clear="both">
 
 <img align="right" height="400" src="https://github.com/sergiocardozo/TablaDidacticaPPS/assets/52476421/d86c5033-b668-4ac2-9ea5-c8636ed337b7"  />
 
