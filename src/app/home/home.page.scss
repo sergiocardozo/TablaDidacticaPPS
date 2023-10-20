@@ -13,7 +13,7 @@ ion-fab-button.btnSeleccion {
 }
 ion-grid {
   height: 100%;
-  width: 100%;
+  display: flex;
 }
 ion-row {
   height: 100%;
@@ -21,7 +21,7 @@ ion-row {
 }
 ion-button {
   border: 5px inset #184E77;
-  width: 10rem;
+  width: 85%;
   height: 10rem;
   object-fit: contain;
   box-shadow: 5px 5px 5px #000;
@@ -30,7 +30,7 @@ ion-button {
 
 @media (min-height: 600px) {
   ion-button {
-    width: 10rem;
-    height: 10rem;
+    width: 11rem;
+    height: 16rem;
   }
 }
